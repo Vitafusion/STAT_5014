@@ -4,12 +4,7 @@ author: "zhengzhi lin"
 date: "2019.9.2"
 output: pdf_document
 ---
----
-title: "HW1_zhengzhi"
-author: "zhengzhi lin"
-date: "2019.9.2"
-output: pdf_document
----
+
 P2
 
 partA\
@@ -34,6 +29,8 @@ Three density funtions:
 \end{cases}\tag{3} \label{eq:special}
 \]
 
+P3
+P4
 ```{r}
 library(ggplot2)
 data(diamonds)
@@ -44,14 +41,5 @@ hist(x=diamonds$carat, xlab = "carat",
      main = "histogram plot of diamonds carat", 
      ylim = c(0,20000))
 ```
+Summary of problem 4: 
 
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
