@@ -28,8 +28,9 @@ Three density funtions:
 0, & \text{otherwise}
 \end{cases}\tag{3} \label{eq:special}
 \]
-
-P3
+\
+P3\
+\
 P4
 ```{r}
 library(ggplot2)
