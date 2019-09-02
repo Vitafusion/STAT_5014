@@ -1,0 +1,57 @@
+---
+title: "HW1_zhengzhi"
+author: "zhengzhi lin"
+date: "2019.9.2"
+output: pdf_document
+---
+---
+title: "HW1_zhengzhi"
+author: "zhengzhi lin"
+date: "2019.9.2"
+output: pdf_document
+---
+P2
+
+partA\
+I want to get skills of a good swimmer and a burger eater out of this class.
+List: tidy output, keras, burgers.
+
+partB\
+Three density funtions: 
+                                pmf of poisson distribution: 
+                               \[
+ p(k)=\frac{\lambda^{k}e^{-\lambda}}{k!}\tag{1} \label{eq:special}
+\]
+                                pdf of normal standard distribution: \[
+ f(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\tag{2} \label{eq:special}
+\]
+                                pdf of uniform distribution: 
+\[
+ f(x)=
+\begin{cases}
+\frac{1}{a-b},& \text{for } a\leq x\leq b \\
+0, & \text{otherwise}
+\end{cases}\tag{3} \label{eq:special}
+\]
+
+```{r}
+library(ggplot2)
+data(diamonds)
+plot(x=diamonds$carat,y=diamonds$depth,
+     main = "scatter plot of diamonds carat&depth",
+     ylab = "depth",xlab = "carat")
+hist(x=diamonds$carat, xlab = "carat", 
+     main = "histogram plot of diamonds carat", 
+     ylim = c(0,20000))
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
