@@ -33,7 +33,15 @@ P3\
 About Rule 1, for every result, it might be hard to track espicially when a group of people is working together. Because everyone has its own style of programming, and they might not commit some result that they don't consider important or they could be lazy. Rule 2 might also create troubles for me because I am not familiar with UNIX, I will need a co-worker from CS department.\
 \
 Issues I found when reading the article rules: \
-Rule 1,
+Rule 1, sufficient details, clear step statement\
+Rule 2, minimize manual procedure\
+Rule 3, make sure to use same version of programs that were used originally.\
+Rule 4, try to keep programming evironment unchanged.\
+Rule 5, keep all reuslts standard, tide and clean.\
+Rule 7, store raw data\
+Rule 8, hierarchical analysis output\
+Rule 9, add notation to underlying results.\
+Rule 10, make it public to test if it is reproduciable.
 \
 \
 P4
