@@ -30,11 +30,11 @@ Three density funtions:
 \]
 \
 P3\
-About Rule 1, for every result, it might be hard to track espicially when a group of people is working together. Because everyone has its own style of programming, and they might not commit some result that they don't consider important or they could be lazy. Rule 2 might also create troubles for me because I am not familiar with UNIX, I will need a co-worker from CS department.
+About Rule 1, for every result, it might be hard to track espicially when a group of people is working together. Because everyone has its own style of programming, and they might not commit some result that they don't consider important or they could be lazy. Rule 2 might also create troubles for me because I am not familiar with UNIX, I will need a co-worker from CS department.\
 \
-Issues I found when reading the article rules: 
-\
+Issues I found when reading the article rules: \
 Rule 1,
+\
 \
 P4
 ```{r}
