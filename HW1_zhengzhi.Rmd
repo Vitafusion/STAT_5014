@@ -5,13 +5,15 @@ date: "2019.9.2"
 output: pdf_document
 ---
 
-P2
+#P2
 
-partA\
+##partA\
+
 I want to get skills of a good swimmer and a burger eater out of this class.
 List: tidy output, keras, burgers.
 
-partB\
+##partB\
+
 Three density funtions: 
                                 pmf of poisson distribution: 
                                \[
@@ -28,8 +30,10 @@ Three density funtions:
 0, & \text{otherwise}
 \end{cases}\tag{3} \label{eq:special}
 \]
-\
-P3\
+
+
+##P3\
+
 About Rule 1, for every result, it might be hard to track espicially when a group of people is working together. Because everyone has its own style of programming, and they might not commit some result that they don't consider important or they could be lazy. Rule 2 might also create troubles for me because I am not familiar with UNIX, I will need a co-worker from CS department.\
 \
 Issues I found when reading the article rules: \
@@ -42,9 +46,11 @@ Rule 7, store raw data\
 Rule 8, hierarchical analysis output\
 Rule 9, add notation to underlying results.\
 Rule 10, make it public to test if it is reproduciable.
-\
-\
-P4
+
+
+
+#P4
+
 ```{r}
 library(ggplot2)
 data(diamonds)
@@ -55,5 +61,3 @@ hist(x=diamonds$carat, xlab = "carat",
      main = "histogram plot of diamonds carat", 
      ylim = c(0,20000))
 ```
-Summary of problem 4: 
-

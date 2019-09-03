@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.2)  3 SEP 2019 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.2)  3 SEP 2019 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -648,99 +648,107 @@ df-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 138.
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 142.
 
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 138.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 142.
 
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 138
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 142
 .
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 138
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 142
 .
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 138.
+(Font)              <10> on input line 142.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 138.
+(Font)              <7> on input line 142.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 138.
-LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+(Font)              <5> on input line 142.
+LaTeX Font Info:    Try loading font information for U+msa on input line 142.
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 138.
+LaTeX Font Info:    Try loading font information for U+msb on input line 142.
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 170.
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+
+ []
+
+[1
+
+{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
+x.map}]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 178.
 
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 171.
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 177
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 179.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 185
 .
 (c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf, id=4, 469.755pt x 325.2
-15pt>
+<HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf, id=45, 469.755pt x 325.
+215pt>
 File: HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type 
 pdf)
 <use HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf>
 Package pdftex.def Info: HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf 
- used on input line 188.
+ used on input line 196.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[1
-
-{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map}]
-<HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf, id=28, 469.755pt x 325.
+<HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf, id=46, 469.755pt x 325.
 215pt>
 File: HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf Graphic file (type 
 pdf)
 <use HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf>
 Package pdftex.def Info: HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf 
- used on input line 198.
+ used on input line 206.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
-[][]
- []
-
-[2 <./HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
-[3 <./HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-2.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+[2 <./HW1_zhengzhi_files/figure-latex/unnamed-chunk-1-1.pdf>] [3 <./HW1_zhengzh
+i_files/figure-latex/unnamed-chunk-1-2.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
 (./HW1_zhengzhi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `HW1_zhengzhi.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 9A9FE8B9825078EAE48F401E4B2C1E5B;354.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 10685 strings out of 494553
- 153796 string characters out of 6175972
- 220699 words of memory out of 5000000
- 14212 multiletter control sequences out of 15000+600000
- 36839 words of font info for 40 fonts, out of 8000000 for 9000
+ 10705 strings out of 494553
+ 153988 string characters out of 6175972
+ 219892 words of memory out of 5000000
+ 14226 multiletter control sequences out of 15000+600000
+ 45834 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,9n,32p,237b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,32p,237b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.
 enc}{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec
 .enc}{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-r
@@ -748,23 +756,25 @@ m.enc}{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
 mathex.enc}{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
 m/lm-mathit.enc}{c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dv
 ips/lm/lm-mathsy.enc}<c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmex10.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmmi10.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-di
-st/fonts/type1/public/lm/lmmi5.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/texm
-f-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/
-texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/linzh/AppData/Roaming/Tiny
-TeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/linzh/AppData/Roaming/
-TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/linzh/AppData/Roami
-ng/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/linzh/AppData/Ro
-aming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/linzh/AppDa
-ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/linzh/
-AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/Users/li
-nzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Use
-rs/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on HW1_zhengzhi.pdf (3 pages, 2325272 bytes).
+ype1/public/lm/lmbx12.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fo
+nts/type1/public/lm/lmex10.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX/tex
+mf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/Users/linzh/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/linzh/AppData/Roaming/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/linzh/AppData/Roaming
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/linzh/AppData/Roa
+ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Users/linzh/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/linzh/AppDa
+ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/linzh/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/l
+inzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/Use
+rs/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c
+:/Users/linzh/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.p
+fb>
+Output written on HW1_zhengzhi.pdf (3 pages, 2346890 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
