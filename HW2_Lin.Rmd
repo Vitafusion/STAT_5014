@@ -104,6 +104,7 @@ tomato_dat %>% str() %>% summary()
 ```{r}
 library(dplyr)
 plants <- read.csv('plants.csv')
+plants %>% na.omit() %>% as.tbl()
 plants <- plants %>% 
   select(Foliage_Color,pH_Min,pH_Max) %>% 
   na.omit() %>%
