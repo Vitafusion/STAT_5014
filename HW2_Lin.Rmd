@@ -29,17 +29,9 @@ op_dat <- as.data.frame(op_dat)
 names(op_dat) <- c('item','operator1','operator2','operator3','operator4','operator5')
 op_dat[,2:6] <- op_dat[,2:6] %>% mutate_if(is.factor, as.character)
 op_dat[,2:6] <- op_dat[,2:6] %>% mutate_if(is.character, as.numeric)
-op_dat
+head(op_dat) 
+op_dat %>% str() %>% summary()
 
-mean_op_table <- op_dat %>% 
-  group_by(item) %>% 
-  summarize(
-    mean1 = mean(operator1),
-    mean2 = mean(operator2),
-    mean3 = mean(operator3),
-    mean4 = mean(operator4),
-    mean5 = mean(operator5)
-  )
 
 
 url <- "https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/LongJumpData.dat"
@@ -51,7 +43,8 @@ names(oly_dat) <- c("year","Long Jump")
 #oly_table <- oly_dat %>% summarize(mean=mean(`Long Jump`),var=var(`Long Jump`))
 oly_dat <- oly_dat[-c(23,24),]
 oly_dat <- oly_dat %>% mutate_if(is.factor,as.character) %>% mutate_if(is.character,as.numeric)
-oly_dat
+head(oly_dat)
+oly_dat %>% str() %>% summary()
 
 url <- 'https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/BrainandBodyWeight.dat'
 weight <- read.table(url,fill = TRUE)
@@ -60,7 +53,8 @@ weight_dat <- rbind(weight[,1:2],weight[,3:4],weight[,5:6])
 weight_dat <- as.data.frame(weight_dat[-nrow(weight_dat),])
 names(weight_dat) <- c("Body Wt","Brain Wt")
 weight_dat <- weight_dat %>% mutate_if(is.factor,as.character) %>% mutate_if(is.character,as.numeric)
-weight_dat
+head(weight_dat)
+weight_dat %>% str() %>% summary()
 
 
 url <- 'https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/tomato.dat'
@@ -100,6 +94,27 @@ tomato_dat[,2:5] <- tomato_dat[,2:5] %>%
   mutate_if(is.factor,as.character) %>% 
   mutate_if(is.character,as.numeric)
 
-tomato_dat
+head(tomato_dat)
+tomato_dat %>% str() %>% summary()
+
+```
+
+
+##P5
+```{r}
+library(dplyr)
+plants <- read.csv('plants.csv')
+plants <- plants %>% 
+  select(Foliage_Color,pH_Min,pH_Max) %>% 
+  na.omit() %>%
+  mutate(
+    pH_Mean=(pH_Min+pH_Max)/2
+  ) %>%
+  select(Foliage_Color,pH_Mean)
+
+t <- lm(formula=pH_Mean~Foliage_Color,data=plants)
+summary(t)
+test <- aov(pH_Mean~Foliage_Color,data = plants)
+summary(test)
 
 ```
