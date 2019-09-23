@@ -108,6 +108,37 @@ head(tomato_dat)
 tomato_dat %>% str() %>% summary()
 ```
 
+##Problem 6
+```{r}
+library(ggplot2)
+library(gridExtra)
+dat_ori <- readRDS("HW4_data.rds", refhook = NULL)
+dat <- dat_ori[1:13,]
+
+#my function
+func_stat <- function(){
+  mean <- mean(dat$dev1)
+  mean2 <- mean(dat$dev2)
+  sd <- sqrt(var(dat$dev1))
+  sd2 <- sqrt(var(dat$dev2))
+  corelation <- cor(dat$dev1, dat$dev2)
+  tab <- as.data.frame(cbind(mean, mean2, sd, sd2, corelation))
+  names(tab) <- c("dev1 mean", "dev2 mean", "dev1 sd", "dev2 sd", "correlation")
+  return(tab)
+} 
+func_stat()
+
+p <- ggplot(data = dat)
+p1 <- p + geom_boxplot(aes(y = dev1)) + ggtitle("boxplot for dev1")
+p2 <- p + geom_boxplot(aes(y = dev2)) + ggtitle("boxplot for dev2")
+p3 <- p + geom_violin(aes(x = "",y = dev1)) + ggtitle("violin plot for dev2")
+p4 <- p + geom_violin(aes(x = "",y = dev2)) + ggtitle("violin plot for dev2")
+
+grid.arrange(p1, p2, ncol = 2)
+grid.arrange(p3, p4, ncol = 2)
+
+```
+
 ##Problem 7
 Reimann sum is .8556252
 ```{r}
