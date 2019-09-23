@@ -1,0 +1,149 @@
+---
+title: "HW4_Lin_Zhengzhi"
+author: "zhengzhi lin"
+date: "2019.9.22"
+output: pdf_document
+---
+##problem 4
+The first one way is to code regularly, by creating a lot variables. This way of coding is easy at when doing the project, but it is hard to review. The second way is using pipe to avoid creating variables, this makes code clean and tidy, easy to read and review.
+
+##problem 5
+
+```{r}
+library(dplyr)
+url <- "https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/Sensory.dat"
+operator <- read.table(url, fill = TRUE)
+op_dat <- as.matrix(operator[-c(1:2), ])
+for (i in 1:10) {
+  t <- op_dat[3 * i - 1, 1:5]
+  t <- c(i, t)
+  op_dat[3 * i - 1, ] <- t
+  m <- op_dat[3 * i, 1 : 5]
+  m <- c(i, m)
+  op_dat[3 * i, ] <- m
+}
+op_dat <- op_dat %>% as.data.frame() %>% rename(item = V1,
+         operator1 = V2, operator2 = V3, operator3 = V4, operator4 = V5, 
+         operator5 = V6) %>%
+  mutate_if(is.factor, as.character) %>% mutate_if(is.character, as.numeric )
+head(op_dat)
+op_dat %>% str() %>% summary()
+
+
+url <- "https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/LongJumpData.dat"
+olympic <- read.table(url, fill = TRUE)
+olympic <- olympic[- 1, ]
+o1 <- olympic[, 1 : 2] %>% rename(year = V1, "Long jump" = V2) %>% 
+  mutate_if(is.factor, as.character) %>% mutate_if(is.character, as.numeric)
+o2 <- olympic[, 3 : 4] %>% rename(year = V3, "Long jump" = V4) %>%
+  mutate_if(is.factor, as.character) %>% mutate_if(is.character, as.numeric)
+o3 <- olympic[, 5 : 6] %>% rename(year = V5, "Long jump" = V6) %>%
+  mutate_if(is.factor, as.character) %>% 
+  mutate_if(is.character, as.numeric)
+o4 <- olympic[, 7 : 8] %>% rename(year = V7, "Long jump" = V8) %>%
+  mutate_if(is.factor, as.character) %>% 
+  mutate_if(is.character, as.numeric)
+ 
+oly_dat <- o1 %>%
+  bind_rows(o2) %>% bind_rows(o3) %>% bind_rows(o4)
+head(oly_dat)
+oly_dat %>% str() %>% summary()
+
+
+
+url <- "https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/BrainandBodyWeight.dat"
+weight <- read.table(url, fill = TRUE)
+weight <- weight[- 1, 1 : 6]
+w1 <- weight[, 1 : 2] %>%  rename("Body Wt" = V1, "Brain Wt" = V2) %>%
+  mutate_if(is.factor, as.character) %>% mutate_if(is.character, as.numeric)
+w2 <- weight[, 3 : 4] %>%  rename("Body Wt" = V3, "Brain Wt" = V4) %>%
+  mutate_if(is.factor, as.character) %>% mutate_if(is.character, as.numeric)
+w3 <- weight[, 5 : 6] %>%  rename("Body Wt" = V5, "Brain Wt" = V6) %>%
+  mutate_if(is.factor, as.character) %>% 
+  mutate_if(is.character, as.numeric)
+weight_dat <- w1 %>%
+  bind_rows(w2) %>% bind_rows(w3)
+head(weight_dat)
+weight_dat %>% str() %>% summary()
+
+
+url <- "https://www2.isye.gatech.edu/~jeffwu/wuhamadabook/data/tomato.dat"
+tomato <- read.csv(url, sep = "\t")
+tomato < - tomato %>% mutate_if(is.factor, as.character)
+size <- paste(tomato[1, ])
+size <- strsplit(size, " ")
+size <- size[[1]][size[[1]] != ""]
+size <- as.numeric(size[1 : 3])   
+size <- as.vector(size)
+
+ife <- paste(tomato[2, ])
+ife <- strsplit(ife, " ")
+ife <- ife[[1]][ife[[1]] != ""]
+ife[2 : 4] <- strsplit(ife[2: 4], ",")
+name <- as.matrix(rep(ife[[1]], 3))
+ife <- rbind(ife[[2]], ife[[3]], ife[[4]])
+ife <- ife %>% 
+  cbind(name) %>% 
+  cbind(c(1000, 2000, 3000))
+
+pusa <- paste(tomato[3, ])
+pusa <- strsplit(pusa, " ")
+pusa <- pusa[[1]][pusa[[1]] != ""]
+pusa[2 : 4] <- strsplit(pusa[2:4], ",")
+name <- as.matrix(rep(pusa[[1]], 3))
+pusa <- rbind(pusa[[2]], pusa[[3]], pusa[[4]])
+pusa <- pusa %>% 
+  cbind(name) %>% 
+  cbind(c(1000, 2000, 3000))
+tomato_dat <- rbind(pusa, ife)
+tomato_dat <- tomato_dat %>% as.data.frame()
+colnames(tomato_dat) <- c("1st", "2nd", "3rd", "name", "plant density")
+tomato_dat <- tomato_dat[, c("name", "plant density", "1st", "2nd", "3rd")]
+
+tomato_dat[, 2 : 5] <- tomato_dat[, 2 : 5] %>% 
+  mutate_if(is.factor, as.character) %>% 
+  mutate_if(is.character, as.numeric)
+
+head(tomato_dat)
+tomato_dat %>% str() %>% summary()
+```
+
+##Problem 7
+Reimann sum is .8556252
+```{r}
+func.1 <- function(x){
+  y <- exp(- x ^ 2 / 2)
+  return(y)
+}
+x <- seq(0, 1, by = 1e-6)
+sum(func.1(x) * (1e-6))
+
+```
+
+##Problem 8
+One of solutions is x = - 3.930114
+```{r}
+library(ggplot2)
+func <- function(x){
+  y <- 3 ^ x - sin(x) + cos(5 * x)
+  return(y)
+}
+
+d_func <- function(x){
+  y <- 3 ^ x * log(3) - cos(x) - 5 * sin(5 * x)
+  return(y)
+}
+
+ggplot(data = data.frame(x = 0,y = 0), mapping = aes(x = x)) + 
+  stat_function(fun = func) + 
+  xlim(-5, 2.5) + 
+  geom_abline(intercept = 0, slope = 0, colour = "red")
+
+x_0 <- -2.5
+eps <- 1e-6
+x <- x_0
+while (abs(func(x)-0) > eps) {
+  x <- x - func(x)/d_func(x)
+}
+x
+```
