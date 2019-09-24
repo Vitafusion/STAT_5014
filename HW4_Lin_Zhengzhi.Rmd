@@ -112,21 +112,27 @@ tomato_dat %>% str() %>% summary()
 ```{r}
 library(ggplot2)
 library(gridExtra)
-dat_ori <- readRDS("HW4_data.rds", refhook = NULL)
-dat <- dat_ori[1:13,]
+dat <- readRDS("HW4_data.rds", refhook = NULL)
+#dat <- dat_ori[1:13,]
 
 #my function
+
 func_stat <- function(){
-  mean <- mean(dat$dev1)
-  mean2 <- mean(dat$dev2)
-  sd <- sqrt(var(dat$dev1))
-  sd2 <- sqrt(var(dat$dev2))
-  corelation <- cor(dat$dev1, dat$dev2)
-  tab <- as.data.frame(cbind(mean, mean2, sd, sd2, corelation))
+  tab <- matrix(0, ncol = 5, nrow = 13)
+for (i in 1:13) {
+  mean <- mean(dat$dev1[which(dat$Observer==i)])
+  mean2 <- mean(dat$dev2[which(dat$Observer==i)])
+  sd <- sqrt(var(dat$dev1[which(dat$Observer==i)]))
+  sd2 <- sqrt(var(dat$dev2[which(dat$Observer==i)]))
+  corelation <- cor(dat$dev2[which(dat$Observer==i)], dat$dev1[which(dat$Observer==i)])
+  tab[i,] <- cbind(mean, mean2, sd, sd2, corelation)
+}
+  tab <- as.data.frame(tab)
   names(tab) <- c("dev1 mean", "dev2 mean", "dev1 sd", "dev2 sd", "correlation")
   return(tab)
 } 
 func_stat()
+
 
 p <- ggplot(data = dat)
 p1 <- p + geom_boxplot(aes(y = dev1)) + ggtitle("boxplot for dev1")
