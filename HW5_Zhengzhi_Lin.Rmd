@@ -1,15 +1,13 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
-
-```{r}
-plot(cars)
-```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
@@ -23,13 +21,20 @@ set.seed(12345)
 system.time(y <- seq(1, 100, 100) + rnorm(100))
 y <- seq(1, 100, 1e8) + rnorm(1e8)
 s <- 0
+y_bar <- mean(y)
+#for (i in 1:length(y)) {
+#  y_bar <- mean(y)
+#  s <- s + (y[i]-y_bar)^2 
+#}
 
-system.time(for (i in 1:length(y)) {
-  y_bar <- mean(y)
-  s <- s + (y[i]-y_bar)^2 
-}
-)
-system.time(t(y-y_bar) %*% (y-y_bar))
+t(y-y_bar) %*% (y-y_bar)
+
+#system.time(for (i in 1:length(y)) {
+#  y_bar <- mean(y)
+#  s <- s + (y[i]-y_bar)^2 
+#}
+#)
+#system.time(t(y-y_bar) %*% (y-y_bar))
 
 ```
 
@@ -83,7 +88,7 @@ p <- runif(932,0,1)
 r <- runif(15068,0,1)
 C<-NULL #save some memory space
 
-system.time(y <- p + A %*% solve(B) %*% (q - r))
-system.time(b <- solve(B))
-system.time(ab <- crossprod(t(A), b))
+#system.time(y <- p + A %*% solve(B) %*% (q - r))
+#system.time(b <- solve(B))
+#system.time(ab <- crossprod(t(A), b))
 ```
