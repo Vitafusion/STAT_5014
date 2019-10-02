@@ -251,7 +251,11 @@ while (abs(t[1] - theta_hat[1]) &gt; tol &amp; abs(t[2] - theta_hat[2]) &gt; tol
   theta_hat[1] &lt;- theta_hat[1] - alpha * mean(X %*% theta_hat - h)
   theta_hat[2] &lt;- theta_hat[2] - alpha * (X[,2] %*% (X %*% theta_hat - h))/(length(X[,2]))
 
-}</code></pre>
+}
+theta_hat</code></pre>
+<pre><code>##          [,1]
+## [1,] 1.067148
+## [2,] 1.993045</code></pre>
 <p>Problem 4</p>
 <pre class="r"><code>#P4 beta_hat
 

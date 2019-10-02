@@ -3,6 +3,7 @@ title: "R Notebook"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -63,6 +64,7 @@ while (abs(t[1] - theta_hat[1]) > tol & abs(t[2] - theta_hat[2]) > tol) {
   theta_hat[2] <- theta_hat[2] - alpha * (X[,2] %*% (X %*% theta_hat - h))/(length(X[,2]))
 
 }
+theta_hat
 ```
 
 Problem 4
